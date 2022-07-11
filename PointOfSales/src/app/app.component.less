@@ -1,0 +1,25 @@
+.column {
+    float: left;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+    width: 20%;
+    background-color: rgb(227, 239, 235);
+  }
+  
+  .right {
+    width: 75%;
+    
+  }
+  .divider {
+    column-rule: 4px double #090909;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

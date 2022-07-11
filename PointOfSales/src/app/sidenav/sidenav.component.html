@@ -1,0 +1,26 @@
+<div>
+    <h3 class="position">Index</h3>
+</div>
+<hr class="solid"> 
+<div>
+    <div>
+        <div>
+            <button type="button" (click)="expand()" *ngIf="!expandElements">+</button>
+            <button type="button" (click)="expand()" *ngIf="expandElements">-</button>
+            About
+        </div>
+        <div *ngIf="expandElements">
+            <ul>
+                <li>
+                    Section 1.1
+                </li>
+                <li>
+                    Section 1.2
+                </li>
+            </ul>
+        </div>
+        <p href="#">+ Services</p>
+        <p href="#">+ Clients</p>
+        <p href="#">+ Contact</p>
+    </div>
+</div>
